@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration form</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="style.css"></script>
+
+</head>
+
+<body>
+     <nav class=" bg-[#7c7c7c] text-black font-bold px-6 py-4">
+  <div class="flex justify-between justify-center items-center">
+    <ul class="flex space-x-6">
+        <h1>PROJECTS:</h1>
+      <li><a href="../time/index.html" class="hover:text-yellow-400">Date & Time</a></li>
+      <li><a href="../calculator/index.html" class="hover:text-yellow-400">Calculator</a></li>
+      <li><a href="../color picker/index.html" class="hover:text-yellow-400">Color Picker</a></li>
+      <li><a href="../empty div/index.html" class="hover:text-yellow-400">Paragraph With JS</a></li>
+      <li><a href="../Image Carousal/index.html" class="hover:text-yellow-400">Image Carousal</a></li>
+      <li><a href="../Registration project/index.html" class="hover:text-yellow-400">Registration Form</a></li>
+      <li><a href="../to do list/index.html" class="hover:text-yellow-400">To-Do-List</a></li>
+      <li><a href="../traffic signal/index.html" class="hover:text-yellow-400">Traffic Signal</a></li>
+      <li><a href="../timer/index.html" class="hover:text-yellow-400">Timer</a></li>
+      <li><a href="../fetch api/index.html" class="hover:text-yellow-400">Fetch Api</a></li>
+    </ul>
+  </div>
+</nav>
+    <div class=" flex bg-[#fff6cc] items-center justify-center h-screen ">
+        <div class="border border-black rounded-xl  w-xs flex pt-5 pb-5 bg-[#c8c8ce] shadow-xl/50 ">
+            <div class="flex flex-col gap-1 justify-center items-center pl-10 ">
+                <h1 class="text-3xl  ">Login Form</h1>
+                <div class="flex flex-col">
+                    <label for="" class="font-medium">Name : </label>
+                    <input id="nameid" class="border rounded-sm text text-[#0a182f]" type="text" placeholder="Enter your name">
+                </div>
+                <div class="flex flex-col">
+                    <label for="" class="font-medium">Phone : </label>
+                    <input id="phoneid" class="border rounded-sm text-[#0a182f]" type="number" placeholder="+91 0000000000">
+                </div>
+                <div class="flex flex-col">
+                    <label for="" class="font-medium">Email : </label>
+                    <input id="emailid" class="border rounded-sm text-[#0a182f]" type="email" placeholder="abc@gmail.com">
+                </div>
+                <div class="flex flex-col">
+                    <label for="" class="font-medium">Password : </label>
+                    <input id="passwordid" class="border rounded-sm text-[#0a182f]" type="password" placeholder="Enter your password">
+                </div>
+                <div class="flex flex-col pl-5  ">
+                    <label for="" class="font-medium">Confirm Password : </label>
+                    <div class="flex gap-1">
+                    <input id="confirmpasswordid" class="border rounded-sm text-[#0a182f]" type="password" placeholder="Re-Enter your password">
+                    <img src="eye.png" id="eye" class="w-5 cursor-pointer" alt="">
+                    </div>
+                </div>
+                <div class="flex gap-4">
+                    <p id="capcha"></p>
+                    <img id="imageid" class="w-7 cursor-pointer" src="refresh.png" alt="">
+
+                </div>
+                <div class="flex flex-col">
+                    <label for="" class="font-medium">Captcha : </label>
+                    <input id="capchainput" class="border rounded-sm text-[#0a182f]" type="text" placeholder="Enter Captcha">
+                </div>
+                <button type="button" id="Submitid" class=" flex mt-1  bg-blue-500 text-white w-30 cursor-pointer  text-center justify-center  rounded-full  ">Submit</button>
+            </div>
+        </div>
+    </div>
+    <script src="function.js"></script>
+</body>
+
+</html>

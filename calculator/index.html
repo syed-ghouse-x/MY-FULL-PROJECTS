@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculator</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+      <nav class=" bg-[#7c7c7c] text-black font-bold px-6 py-4">
+  <div class="flex justify-between justify-center items-center">
+    <ul class="flex space-x-6">
+        <h1>PROJECTS:</h1>
+      <li><a href="../time/index.html" class="hover:text-yellow-400">Date & Time</a></li>
+      <li><a href="../calculator/index.html" class="hover:text-yellow-400">Calculator</a></li>
+      <li><a href="../color picker/index.html" class="hover:text-yellow-400">Color Picker</a></li>
+      <li><a href="../empty div/index.html" class="hover:text-yellow-400">Paragraph With JS</a></li>
+      <li><a href="../Image Carousal/index.html" class="hover:text-yellow-400">Image Carousal</a></li>
+      <li><a href="../Registration project/index.html" class="hover:text-yellow-400">Registration Form</a></li>
+      <li><a href="../to do list/index.html" class="hover:text-yellow-400">To-Do-List</a></li>
+      <li><a href="../traffic signal/index.html" class="hover:text-yellow-400">Traffic Signal</a></li>
+      <li><a href="../timer/index.html" class="hover:text-yellow-400">Timer</a></li>
+      <li><a href="../fetch api/index.html" class="hover:text-yellow-400">Fetch Api</a></li>
+    </ul>
+  </div>
+</nav>
+    <div class="flex  items-center h-screen bg-[#4f241c]     justify-center">
+        <div class="flex flex-col gap-2 bg-[#f3f2b4] rounded-xl text-center border border-black w-xs pt-5 pb-5 shadow-xl/50  justify-center">
+           <h1 class="font-bold text-3xl">CALCULATOR</h1>
+            <div>
+                <input id="input" class="rounded border w-[250px] text-right" type="text" readonly placeholder="0">
+            </div>
+            <div>
+                <button id="clear"onclick="clearall()">AC</button>
+                <button id="percentage" onclick="appendValue('%')">%</button>
+                <button id="delete" onclick="delete1()">Del</button>
+                <button id="divide" onclick="appendValue('/')">/</button>
+            </div>
+            <div>
+                <button id="nine" onclick="appendValue('9')">9</button>
+                <button id="eight" onclick="appendValue('8')">8</button>
+                <button id="seven" onclick="appendValue('7')">7</button>
+                <button id="multiply" onclick="appendValue('*')">*</button>
+            </div>
+            <div>
+                <button id="six" onclick="appendValue('6')">6</button>
+                <button id="five" onclick="appendValue('5')">5</button>
+                <button id="four" onclick="appendValue('4')">4</button>
+                <button id="minus" onclick="appendValue('-')">-</button>
+            </div>
+            <div>
+                <button id="three" onclick="appendValue('3')">3</button>
+                <button id="two" onclick="appendValue('2')">2</button>
+                <button id="one" onclick="appendValue('1')">1</button>
+                <button id="plus" onclick="appendValue('+')">+</button>
+            </div>
+            <div>
+                <button id="doublezero" onclick="appendValue('00')">00</button>
+                <button id="zero" onclick="appendValue('0')">0</button>
+                <button id="dot" onclick="appendValue('.')">.</button>
+                <button id="equal" onclick="calculate()">=</button>
+            </div>
+        </div>
+    </div>
+    <script src="function.js"></script>
+</body>
+
+</html>

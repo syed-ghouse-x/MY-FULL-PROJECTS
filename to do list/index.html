@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do List</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body>
+     <nav class=" bg-[#7c7c7c] text-black font-bold px-6 py-4">
+  <div class="flex justify-between justify-center items-center">
+    <ul class="flex space-x-6">
+        <h1>PROJECTS:</h1>
+      <li><a href="../time/index.html" class="hover:text-yellow-400">Date & Time</a></li>
+      <li><a href="../calculator/index.html" class="hover:text-yellow-400">Calculator</a></li>
+      <li><a href="../color picker/index.html" class="hover:text-yellow-400">Color Picker</a></li>
+      <li><a href="../empty div/index.html" class="hover:text-yellow-400">Paragraph With JS</a></li>
+      <li><a href="../Image Carousal/index.html" class="hover:text-yellow-400">Image Carousal</a></li>
+      <li><a href="../Registration project/index.html" class="hover:text-yellow-400">Registration Form</a></li>
+      <li><a href="../to do list/index.html" class="hover:text-yellow-400">To-Do-List</a></li>
+      <li><a href="../traffic signal/index.html" class="hover:text-yellow-400">Traffic Signal</a></li>
+      <li><a href="../timer/index.html" class="hover:text-yellow-400">Timer</a></li>
+      <li><a href="../fetch api/index.html" class="hover:text-yellow-400">Fetch Api</a></li>
+    </ul>
+  </div>
+</nav>
+    <div class="flex text-center justify-center items-center h-screen bg-[#e9e390]">
+        <div class="border w-xl rounded-xl p-5 gap-2 bg-[#8a8c69]">
+        <h1 class="text-2xl font-bold">Welcome To To-Do-List</h1>
+        <input class="border rounded w-md p-2 text-white" type="text" name="" id="inputtask" placeholder="Type here text to add">
+        <button class="border rounded bg-[#051cf0] text-white p-2 cursor-pointer w-20" id="addtask">Add</button>
+       <div id="empty" class="flex"></div>
+    </div>
+        
+    </div>
+    <script src="function.js"></script>
+</body>
+</html>

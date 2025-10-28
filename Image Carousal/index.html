@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Carousal</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body>
+     <nav class=" bg-[#7c7c7c] text-black font-bold px-6 py-4">
+  <div class="flex justify-between justify-center items-center">
+    <ul class="flex space-x-6">
+        <h1>PROJECTS:</h1>
+      <li><a href="../time/index.html" class="hover:text-yellow-400">Date & Time</a></li>
+      <li><a href="../calculator/index.html" class="hover:text-yellow-400">Calculator</a></li>
+      <li><a href="../color picker/index.html" class="hover:text-yellow-400">Color Picker</a></li>
+      <li><a href="../empty div/index.html" class="hover:text-yellow-400">Paragraph With JS</a></li>
+      <li><a href="../Image Carousal/index.html" class="hover:text-yellow-400">Image Carousal</a></li>
+      <li><a href="../Registration project/index.html" class="hover:text-yellow-400">Registration Form</a></li>
+      <li><a href="../to do list/index.html" class="hover:text-yellow-400">To-Do-List</a></li>
+      <li><a href="../traffic signal/index.html" class="hover:text-yellow-400">Traffic Signal</a></li>
+      <li><a href="../timer/index.html" class="hover:text-yellow-400">Timer</a></li>
+      <li><a href="../fetch api/index.html" class="hover:text-yellow-400">Fetch Api</a></li>
+    </ul>
+  </div>
+</nav>
+    <div id="maindiv" class="flex gap-2 justify-center items-center h-screen shadow-xl bg-[#ef9ba9]">
+        <img src="left arrow.svg" id="leftarrow"  class="w-[40px]  h-[40px] text-center cursor-pointer"  alt="">
+        <img id="image"  src="01.jpg" alt="">
+        <img src="right arrow.svg" id="rightarrow" class="w-[40px] h-[40px] cursor-pointer">
+    </div>
+    <script src="function.js"></script>
+</body>
+</html>

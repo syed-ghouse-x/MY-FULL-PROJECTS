@@ -1,0 +1,13 @@
+#image{
+width: 600px;
+height: 400px;
+object-fit: cover;
+border-radius: 10px;
+}
+/* body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    
+} */
